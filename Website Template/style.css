@@ -45,6 +45,7 @@
 html
 {
     scroll-behavior: smooth;
+    background-color: var(--bg-black-900);
 }
 
 body 

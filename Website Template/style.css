@@ -258,7 +258,6 @@ ul
     background: var(--skin-color);
     display: inline-block;
     position: relative;
-    transition: all 1s ease;
 }
 
 .aside .nav-toggler span::before 
@@ -325,8 +324,8 @@ ul
 
 .home .home-info
 {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 70%;
+    max-width: 70%;
 }
 
 h3.hello
@@ -360,45 +359,6 @@ h3.profession
     margin-bottom: 70px;
     color: var(--text-black-700);
 }
-
-.home .home-img
-{
-    flex: 0 0 40%;
-    max-width: 400px;
-    max-height: 400px;
-    text-align: center;
-    position: relative;
-}
-
-.home-img::before
-{
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    left: -20px;
-    top: -40px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color) ;
-}
-
-.home-img::after
-{
-    content: '';
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    right: -20px;
-    bottom: -40px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color) ;
-}
-
-.home .home-img iframe
-{
-    max-width: 200;
-    max-height: 200;
-}
 /* Home End*/
 
 /* careerPath Start*/
@@ -408,142 +368,19 @@ h3.profession
     max-width: 100%;
 }
 
-
-.careerPath .careerPath-content .careerPath-text
+.careerPath .careerPath-content a h3:hover
 {
-    flex: 0 0 100%;
-    max-width: 100%;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    color:var(--skin-color)
 }
 
-.careerPath .careerPath-content .careerPath-text h3
+.careerPath .careerPath-content .webDevelopment,
+.careerPath .careerPath-content .productDesigner,
+.careerPath .careerPath-content .devOps
 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: var(--text-black-900);
-}
-
-.careerPath .careerPath-content .careerPath-text h3 span
-{
-    color: var(--skin-color);
-}
-
-.careerPath .careerPath-content .careerPath-text p
-{
-    font-size: 16px;
-    color: var(--text-black-700);
-    line-height: 25px;
-}
-
-.careerPath .careerPath-content .personal-info
-{
-    flex: 0 0 60%;
-    max-width: 60%;
-    padding-top: 45px;
-}
-
-.careerPath .careerPath-content .personal-info .info-item
-{
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.careerPath .careerPath-content .personal-info .info-item p
-{
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--text-black-900);
-    padding: 10px 0;
-    border-bottom: 1px solid var(--bg-black-50);
-}
-
-.careerPath .careerPath-content .personal-info .info-item p span
-{
-    color: var(--text-black-700);
-    font-weight: 400;
-    margin-left: 4px;
-    display: inline-block;
-}
-
-.careerPath .careerPath-content .personal-info .buttons
-{
-    margin-top: 30px;
-    width: 100%;
-}
-
-.careerPath .careerPath-content .personal-info .buttons .btn
-{
-    margin-right: 15px;
-    margin-top: 10px;
-}
-
-.careerPath .careerPath-content .personal-info .buttons a.btn.hire-me
-{
-    position: relative;
-    margin-left: 116.5px;
-}
-
-.careerPath .careerPath-content .skills
-{
-    flex: 0 0 40%;
-    max-width: 40%;
-}
-
-.careerPath .careerPath-content .skills .skill-item
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.careerPath .careerPath-content .skills .skill-item h5
-{
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--text-black-900);
-    line-height: 40px;
-    text-transform: capitalize;
-}
-
-.careerPath .careerPath-content .skills .skill-item .progress
-{
-    height: 7px;
-    background-color: var(--bg-black-50);
-    border-radius: 4px;
-    width: 100%;
-    position: relative;
-}
-
-.careerPath .careerPath-content .skills .skill-item
-{
-    margin-bottom: 25px;
-}
-
-.careerPath .careerPath-content .skills .skill-item .progress .progress-in
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    border-radius: 4px;
-    background-color: var(--skin-color);
-}
-
-.careerPath .careerPath-content .skills .skill-item .skill-percent
-{
-    position: absolute;
-    right: 0;
-    top: -40px;
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--text-black-900);
-    line-height: 40px;
-}
-
-.careerPath .careerPath-content .education,
-.careerPath .careerPath-content .experience
-{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     margin-top: 30px;
 }
 
@@ -926,12 +763,6 @@ h3.profession
     {
         left: 0;
     }
-
-    .careerPath .careerPath-content .personal-info .info-item p span
-    {
-        display: block;
-        margin-left: 0;
-    }
 }
 
 @media (max-width: 991px)
@@ -961,10 +792,9 @@ h3.profession
     .domain .domain-item,
     .Jobs .Jobs-item,
     .contact .contact-form .col-6,
-    .careerPath .careerPath-content .education,
-    .careerPath .careerPath-content .experience,
-    .careerPath .careerPath-content .personal-info,
-    .careerPath .careerPath-content .skills
+    .careerPath .careerPath-content .webDevelopment,
+    .careerPath .careerPath-content .productDesigner,
+    .careerPath .careerPath-content .devOps
     {
         flex: 0 0 100%;
         max-width: 100%;

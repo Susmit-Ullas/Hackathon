@@ -4,8 +4,6 @@ Hackathon Project
 
 ## Demo
 
-[Video demo](https://susmit-ullas.github.io/Hackathon/WebsiteTemplate/Resources/HackathonProject.mp4) of the project.
-
 ## Tech Stack
 
 - HTML

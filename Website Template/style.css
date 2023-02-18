@@ -331,19 +331,19 @@ ul
 
 h3.hello
 {
-    font-size: 28px;
+    font-size: 50px;
     margin: 15px 0;
 }
 
 h3.hello span
 {
     font-family: "Clicker Script", cursive;
-    font-size: 30px;
+    font-size: 55px;
     font-weight: 700;
     color: var(--skin-color);
 }
 
-h3.my-profession
+h3.profession
 {
     font-size: 30px;
     margin: 15px 0;
@@ -364,7 +364,8 @@ h3.my-profession
 .home .home-img
 {
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 400px;
+    max-height: 400px;
     text-align: center;
     position: relative;
 }
@@ -393,29 +394,28 @@ h3.my-profession
     border-right: 10px solid var(--skin-color) ;
 }
 
-.home .home-img img 
+.home .home-img iframe
 {
-    margin: auto;
-    border-radius: 5px;
-    height: 400px;
+    max-width: 200;
+    max-height: 200;
 }
 /* Home End*/
 
-/* About Start*/
-.about .about-content
+/* careerPath Start*/
+.careerPath .careerPath-content
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
 
-.about .about-content .about-text
+.careerPath .careerPath-content .careerPath-text
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .about-text h3
+.careerPath .careerPath-content .careerPath-text h3
 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -423,32 +423,32 @@ h3.my-profession
     color: var(--text-black-900);
 }
 
-.about .about-content .about-text h3 span
+.careerPath .careerPath-content .careerPath-text h3 span
 {
     color: var(--skin-color);
 }
 
-.about .about-content .about-text p
+.careerPath .careerPath-content .careerPath-text p
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
 
-.about .about-content .personal-info
+.careerPath .careerPath-content .personal-info
 {
     flex: 0 0 60%;
     max-width: 60%;
     padding-top: 45px;
 }
 
-.about .about-content .personal-info .info-item
+.careerPath .careerPath-content .personal-info .info-item
 {
     flex: 0 0 50%;
     max-width: 50%;
 }
 
-.about .about-content .personal-info .info-item p
+.careerPath .careerPath-content .personal-info .info-item p
 {
     font-weight: 600;
     font-size: 16px;
@@ -457,7 +457,7 @@ h3.my-profession
     border-bottom: 1px solid var(--bg-black-50);
 }
 
-.about .about-content .personal-info .info-item p span
+.careerPath .careerPath-content .personal-info .info-item p span
 {
     color: var(--text-black-700);
     font-weight: 400;
@@ -465,37 +465,37 @@ h3.my-profession
     display: inline-block;
 }
 
-.about .about-content .personal-info .buttons
+.careerPath .careerPath-content .personal-info .buttons
 {
     margin-top: 30px;
     width: 100%;
 }
 
-.about .about-content .personal-info .buttons .btn
+.careerPath .careerPath-content .personal-info .buttons .btn
 {
     margin-right: 15px;
     margin-top: 10px;
 }
 
-.about .about-content .personal-info .buttons a.btn.hire-me
+.careerPath .careerPath-content .personal-info .buttons a.btn.hire-me
 {
     position: relative;
     margin-left: 116.5px;
 }
 
-.about .about-content .skills
+.careerPath .careerPath-content .skills
 {
     flex: 0 0 40%;
     max-width: 40%;
 }
 
-.about .about-content .skills .skill-item
+.careerPath .careerPath-content .skills .skill-item
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .skills .skill-item h5
+.careerPath .careerPath-content .skills .skill-item h5
 {
     font-size: 16px;
     font-weight: 600;
@@ -504,7 +504,7 @@ h3.my-profession
     text-transform: capitalize;
 }
 
-.about .about-content .skills .skill-item .progress
+.careerPath .careerPath-content .skills .skill-item .progress
 {
     height: 7px;
     background-color: var(--bg-black-50);
@@ -513,12 +513,12 @@ h3.my-profession
     position: relative;
 }
 
-.about .about-content .skills .skill-item
+.careerPath .careerPath-content .skills .skill-item
 {
     margin-bottom: 25px;
 }
 
-.about .about-content .skills .skill-item .progress .progress-in
+.careerPath .careerPath-content .skills .skill-item .progress .progress-in
 {
     position: absolute;
     left: 0;
@@ -528,7 +528,7 @@ h3.my-profession
     background-color: var(--skin-color);
 }
 
-.about .about-content .skills .skill-item .skill-percent
+.careerPath .careerPath-content .skills .skill-item .skill-percent
 {
     position: absolute;
     right: 0;
@@ -539,15 +539,15 @@ h3.my-profession
     line-height: 40px;
 }
 
-.about .about-content .education,
-.about .about-content .experience
+.careerPath .careerPath-content .education,
+.careerPath .careerPath-content .experience
 {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
 }
 
-.about .about-content h3.title
+.careerPath .careerPath-content h3.title
 {
     font-size: 24px;
     margin-bottom: 30px;
@@ -555,13 +555,13 @@ h3.my-profession
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline-box
+.careerPath .careerPath-content .timeline-box
 {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .timeline
+.careerPath .careerPath-content .timeline
 {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
@@ -571,19 +571,19 @@ h3.my-profession
     border: 1px solid var(--bg-black-50);
 }
 
-.about .about-content .timeline .timeline-item
+.careerPath .careerPath-content .timeline .timeline-item
 {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
 
-.about .about-content .timeline .timeline-item:last-child
+.careerPath .careerPath-content .timeline .timeline-item:last-child
 {
     padding-bottom: 0;
 }
 
-.about .about-content .timeline .timeline-item::before
+.careerPath .careerPath-content .timeline .timeline-item::before
 {
     position: absolute;
     content: '';
@@ -594,7 +594,7 @@ h3.my-profession
     top: 0;
 }
 
-.about .about-content .timeline .circle-dot
+.careerPath .careerPath-content .timeline .circle-dot
 {
     position: absolute;
     left: 0;
@@ -605,7 +605,7 @@ h3.my-profession
     background-color: var(--skin-color);
 }
 
-.about .about-content .timeline .timeline-date
+.careerPath .careerPath-content .timeline .timeline-date
 {
     font-size: 14px;
     font-weight: 400;
@@ -613,12 +613,12 @@ h3.my-profession
     color: var(--text-black-700);
 }
 
-.about .about-content .timeline .timeline-date .fa
+.careerPath .careerPath-content .timeline .timeline-date .fa
 {
     margin-right: 5px;
 }
 
-.about .about-content .timeline .timeline-title
+.careerPath .careerPath-content .timeline .timeline-title
 {
     font-size: 18px;
     font-weight: 700;
@@ -627,29 +627,29 @@ h3.my-profession
     color: var(--text-black-900);
 }
 
-.about .about-content .timeline .timeline-text
+.careerPath .careerPath-content .timeline .timeline-text
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
     text-align: justify;
 }
-/* About End*/
+/* careerPath End*/
 
-/* Service Start*/
-.service .container
+/* domain Start*/
+.domain .container
 {
     padding-bottom: 40px;
 }
 
-.service .service-item
+.domain .domain-item
 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.service .service-item .service-item-inner
+.domain .domain-item .domain-item-inner
 {
     background-color: var(--bg-black-100);
     padding: 30px 15px;
@@ -659,12 +659,12 @@ h3.my-profession
     border: 1px solid var(--bg-black-50);
 }
 
-.service .service-item .service-item-inner:hover
+.domain .domain-item .domain-item-inner:hover
 {
     box-shadow: 0 0 20px rgb(48, 46, 77, 0.15);
 }
 
-.service .service-item .service-item-inner .icon
+.domain .domain-item .domain-item-inner .icon
 {
     height: 60px;
     width: 60px;
@@ -675,25 +675,25 @@ h3.my-profession
     transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner .icon .fa
+.domain .domain-item .domain-item-inner .icon .fa
 {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon
+.domain .domain-item .domain-item-inner:hover .icon
 {
     background: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa
+.domain .domain-item .domain-item-inner:hover .icon .fa
 {
     color: #fff;
     font-size: 25px;
 }
 
-.service .service-item .service-item-inner h4
+.domain .domain-item .domain-item-inner h4
 {
     font-size: 18px;
     font-weight: 700;
@@ -702,41 +702,41 @@ h3.my-profession
     color: var(--text-black-900);
 } 
 
-.service .service-item .service-item-inner p
+.domain .domain-item .domain-item-inner p
 {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
 }
-/* Service End*/
+/* domain End*/
 
-/* Portfolio Start*/
-.portfolio .container
+/* Jobs Start*/
+.Jobs .container
 {
     padding-bottom: 40px;
 }
 
-.portfolio .portfolio-heading
+.Jobs .Jobs-heading
 {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.portfolio .portfolio-heading h2
+.Jobs .Jobs-heading h2
 {
     font-weight: 500;
     color: var(--text-black-900);
 }
 
-.portfolio .portfolio-item
+.Jobs .Jobs-item
 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.portfolio .portfolio-item-inner
+.Jobs .Jobs-item-inner
 {
     overflow: hidden;
     cursor: pointer;
@@ -744,12 +744,12 @@ h3.my-profession
     border: 6px solid var(--bg-black-100);
 }
 
-.portfolio .portfolio-item-inner .portfolio-img img
+.Jobs .Jobs-item-inner .Jobs-img img
 {
     width: 100%;
     display: block;
 }
-/* Portfolio End*/
+/* Jobs End*/
 
 /* Contact Start*/
 .contact-title
@@ -927,7 +927,7 @@ h3.my-profession
         left: 0;
     }
 
-    .about .about-content .personal-info .info-item p span
+    .careerPath .careerPath-content .personal-info .info-item p span
     {
         display: block;
         margin-left: 0;
@@ -937,8 +937,8 @@ h3.my-profession
 @media (max-width: 991px)
 {
     .coontact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item
+    .Jobs .Jobs-item,
+    .domain .domain-item
     {
         flex: 0 0 50%;
         max-width: 50%;
@@ -958,13 +958,13 @@ h3.my-profession
 
 @media (max-width: 767px)
 {
-    .service .service-item,
-    .portfolio .portfolio-item,
+    .domain .domain-item,
+    .Jobs .Jobs-item,
     .contact .contact-form .col-6,
-    .about .about-content .education,
-    .about .about-content .experience,
-    .about .about-content .personal-info,
-    .about .about-content .skills
+    .careerPath .careerPath-content .education,
+    .careerPath .careerPath-content .experience,
+    .careerPath .careerPath-content .personal-info,
+    .careerPath .careerPath-content .skills
     {
         flex: 0 0 100%;
         max-width: 100%;

@@ -22,7 +22,7 @@
 
 ::-webkit-scrollbar
 {
-    width: 1em;
+    width: .6em;
     background: var(--bg-black-900);
 }
 
@@ -38,8 +38,8 @@
 {
     background: var(--bg-black-100);
     width: .5em;
-    border-radius: .4vw;
-    border: .2em solid var(--skin-color);
+    border-radius: .2vw;
+    border: .15em solid var(--skin-color);
 }
 
 html
@@ -676,7 +676,7 @@ h3.profession
 .contact .contact-form .form-item .form-control:focus ~ span
 {
     color: var(--skin-color);
-    transform: translateX(10px) translateY(-19px);
+    transform: translateX(10px) translateY(-20px);
     font-size: .8em;
     background: var(--bg-black-900);
     padding: 0 10px;
@@ -692,6 +692,13 @@ h3.profession
 .contact .contact-form .form-item textarea.form-control
 {
     height: 140px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.contact .contact-form .form-item .form-control
+{
+    padding-left: 10px;
 }
 
 .contact .contact-form .form-item .form-group span

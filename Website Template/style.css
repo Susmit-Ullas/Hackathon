@@ -67,7 +67,7 @@ ul
 
 .main-content
 {
-    padding-left: 250px;
+    padding-left: 200px;
 }
 
 .section 
@@ -172,12 +172,12 @@ ul
 /* Aside Start*/
 .aside 
 {
-    width: 250px;
+    width: 200px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
     top: 0;
-    padding: 30px;
+    padding: 20px;
     height: 100%;
     border-bottom: 1px solid var(--bg-black-50);
     display: flex;
@@ -569,22 +569,30 @@ h3.profession
 
 .Jobs .Jobs-item
 {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 25%;
+    max-width: 25%;
     margin-bottom: 30px;
 }
 
 .Jobs .Jobs-item-inner
 {
+    background: black;
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px;
     border: 6px solid var(--bg-black-100);
+    min-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .Jobs .Jobs-item-inner .Jobs-img img
 {
     width: 100%;
+    height: 100%;
     display: block;
 }
 /* Jobs End*/

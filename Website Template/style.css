@@ -472,6 +472,14 @@ h3.profession
     line-height: 25px;
     text-align: justify;
 }
+
+.careerPath .see-more
+{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
 /* careerPath End*/
 
 /* domain Start*/
@@ -548,54 +556,75 @@ h3.profession
 }
 /* domain End*/
 
-/* Jobs Start*/
-.Jobs .container
+/* Courses Start*/
+.Courses .container
 {
     padding-bottom: 40px;
 }
 
-.Jobs .Jobs-heading
+.Courses .Courses-item
 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-}
-
-.Jobs .Jobs-heading h2
-{
-    font-weight: 500;
-    color: var(--text-black-900);
-}
-
-.Jobs .Jobs-item
-{
-    flex: 0 0 25%;
-    max-width: 25%;
+    flex: auto auto 33.33%;
+    max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.Jobs .Jobs-item-inner
+.Courses .Courses-item-inner
 {
-    background: black;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
     overflow: hidden;
-    cursor: pointer;
     border-radius: 10px;
     border: 6px solid var(--bg-black-100);
-    min-width: 200px;
-    min-height: 200px;
-    max-height: 200px;
+    
+    max-height: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 
-.Jobs .Jobs-item-inner .Jobs-img img
+.Courses .Courses-item-inner .Courses-img img
 {
     width: 100%;
-    height: 100%;
     display: block;
+    border-radius: 8px;
 }
-/* Jobs End*/
+
+.Courses .Course-info
+{
+    text-align: center;
+}
+
+.Courses .Course-info h4
+{
+   font-size: 30px;
+   padding: 10px;
+}
+
+.Courses .Course-info p
+{
+    font-size: 15px;
+    color: var(--text-black-700);
+    margin-bottom: 30px;
+}
+
+.Courses .read-more
+{
+    width: 100%;
+    text-align: right;
+}
+
+.Courses .btn
+{
+    border: 2px solid var(--skin-color);
+    background: none;
+    font-size: 12px;
+    padding: 2px 8px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+/* Courses End*/
 
 /* Contact Start*/
 .contact-title
@@ -728,6 +757,57 @@ h3.profession
 }
 /* Contact End*/
 
+/* Footer Start*/
+.footer
+{
+    min-height: 400px;
+    max-height: 400px;
+}
+
+hr 
+{
+  border: dotted #EAF6F6 10px;
+  border-bottom: none;
+  margin-bottom: 100px ;
+}
+
+.footer .footer-item
+{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.footer .footer-item .icon
+{
+    display: inline-block;
+}
+
+.footer .footer-item .icon i
+{
+    font-size: 25px;
+    color: var(--skin-color)
+}
+
+.footer .footer-item h4
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.footer h4
+{
+    color: var(--text-black-900);
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+}
+/* Footer End */
+
 @media (max-width: 1199px)
 {
     .main-content
@@ -784,7 +864,7 @@ h3.profession
 @media (max-width: 991px)
 {
     .coontact .contact-info-item,
-    .Jobs .Jobs-item,
+    .Courses .Courses-item,
     .domain .domain-item
     {
         flex: 0 0 50%;
@@ -806,7 +886,7 @@ h3.profession
 @media (max-width: 767px)
 {
     .domain .domain-item,
-    .Jobs .Jobs-item,
+    .Courses .Courses-item,
     .contact .contact-form .col-6,
     .careerPath .careerPath-content .webDevelopment,
     .careerPath .careerPath-content .productDesigner,

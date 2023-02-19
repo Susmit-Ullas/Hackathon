@@ -11,9 +11,9 @@
 
 :root 
 {
-    --bg-black-900:#0e0e0e;
-    --bg-black-800:#1a1a1a;
-    --bg-black-100:#222222;
+    --bg-black-900:#080808f3;
+    --bg-black-800:#131313a6;
+    --bg-black-100:#1d1d1de0;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
@@ -150,17 +150,18 @@ ul
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
-    background: var(--skin-color);
     color: white;
+    background-color: rgba(255, 68, 0, 0.733);
     display: inline-block;
     white-space: nowrap;
-    border: none;
+    border: 2px solid var(--skin-color);
     border-radius: 40px;
     transition: all 0.3s ease;
 }
 
 .btn:hover
 {
+    background: var(--skin-color);
     transform: scale(1.05);
 }
 
@@ -315,30 +316,63 @@ ul
 }
 /* Aside End*/
 
+/* Sign Start */
+.sign 
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign .sign-in 
+{
+    padding: 15px;
+}
+
+.sign .sign-up
+{
+    padding: 15px;
+}
+
+.sign a
+{
+    color: black;
+    padding: 8px 20px;
+} 
+/* Sign End */
+
 /* Home Start*/
 .home 
 {
+    background-image: url('Resources/Internet.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     min-height: 100vh;
     display: flex;
-    color: var(--text-black-900);
+    color: var(--bg-black-900);
 }
 
 .home .home-info
 {
-    flex: 0 0 70%;
-    max-width: 70%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
-h3.hello
+.home .hello
 {
     font-size: 50px;
     margin: 15px 0;
 }
 
-h3.hello span
+.home .hello span
 {
     font-family: "Clicker Script", cursive;
-    font-size: 55px;
+    font-size: 100px;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -358,7 +392,11 @@ h3.profession
 {
     font-size: 20px;
     margin-bottom: 70px;
-    color: var(--text-black-700);
+}
+
+.home .home-info .btn
+{
+    color: var(--bg-black-900);
 }
 /* Home End*/
 
@@ -483,9 +521,22 @@ h3.profession
 /* careerPath End*/
 
 /* domain Start*/
+.domain
+{
+    background-image: url('Resources/Domain.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .domain .container
 {
     padding-bottom: 40px;
+}
+
+.domain .container .section-title h2
+{
+    color: var(--bg-black-900);
 }
 
 .domain .domain-item
@@ -617,8 +668,6 @@ h3.profession
 
 .Courses .btn
 {
-    border: 2px solid var(--skin-color);
-    background: none;
     font-size: 12px;
     padding: 2px 8px;
     margin-bottom: 5px;
@@ -627,6 +676,19 @@ h3.profession
 /* Courses End*/
 
 /* Contact Start*/
+.contact
+{
+    background-image: url('Resources/Contact.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact .section-title h2
+{
+    color: var(--bg-black-900);
+}
+
 .contact-title
 {
     color: var(--skin-color);
@@ -637,7 +699,7 @@ h3.profession
 
 .contact-sub-title
 {
-    color: var(--text-black-900);
+    color: var(--bg-black-900);
     font-size: 15px;
     text-align: center;
     margin-bottom: 60px;
@@ -660,6 +722,14 @@ h3.profession
 {
     font-size: 25px;
     color: var(--skin-color)
+}
+
+.contact .contact-info-item .icon .fa:hover
+{
+    background-color: var(--skin-color);
+    color: var(--bg-black-900);
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .contact .contact-info-item h4
@@ -713,11 +783,11 @@ h3.profession
 .contact .contact-form .form-item .form-control:focus ~ span
 {
     color: var(--skin-color);
-    transform: translateX(10px) translateY(-20px);
-    font-size: .8em;
-    background: var(--bg-black-900);
+    transform: translateX(10px) translateY(-24px);
+    background-color: black;
+    border-radius: 5px;
+    font-size: 1em;
     padding: 0 10px;
-    border-radius: 50%;
 }
 
 .contact .contact-form .form-item .form-control:valid,
@@ -784,6 +854,14 @@ hr
     display: inline-block;
 }
 
+.footer .footer-item .icon i:hover
+{
+    background-color: var(--skin-color);
+    color: var(--text-black-900);
+    border-radius: 50%;
+    padding: 10px;
+}
+
 .footer .footer-item .icon i
 {
     font-size: 25px;
@@ -805,6 +883,7 @@ hr
     position: relative;
     font-size: 15px;
     text-align: center;
+    bottom: 0;
 }
 /* Footer End */
 

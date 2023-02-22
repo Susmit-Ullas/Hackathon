@@ -409,7 +409,7 @@ h3.profession
 
 .careerPath .careerPath-content a h3:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.01);
     transition: ease-in-out 0.3s;
     color:var(--skin-color)
 }
@@ -890,7 +890,7 @@ h3.profession
 {
     .main-content
     {
-        padding-left: 0;
+        margin-left: 0;
     }
 
     .section
@@ -933,9 +933,9 @@ h3.profession
         top: 0;
     }
 
-    .section
+    .footer
     {
-        left: 0;
+        margin-left: 0;
     }
 }
 
